@@ -11,6 +11,7 @@ sudo \
 bzip2 \
 vim
 
+# 下記が無いとtzdataでエラーが出る場合があったため追加（なぜ必要か不明）
 RUN sudo apt-get -y update && apt-get -y upgrade
 
 # libgtkextra-dev のところでlocationを入力する謎の項目があるが、入力してもフリーズする。tzdataをやると解消する
