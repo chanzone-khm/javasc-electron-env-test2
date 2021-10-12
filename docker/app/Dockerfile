@@ -1,5 +1,5 @@
 # 参考https://zukucode.com/2019/07/docker-electron-dev.html
-FROM ubuntu
+FROM ubuntu:20.04
 
 # update
 RUN apt-get -y update && apt-get -y upgrade
@@ -10,6 +10,8 @@ RUN apt-get install -y \
 sudo \
 bzip2 \
 vim
+
+RUN sudo apt-get -y update && apt-get -y upgrade
 
 # libgtkextra-dev のところでlocationを入力する謎の項目があるが、入力してもフリーズする。tzdataをやると解消する
 # Dpkg ~~ をインストールするとkeyエラーみたいなやつが解消する
