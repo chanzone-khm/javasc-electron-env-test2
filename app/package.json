@@ -6,13 +6,28 @@
   "scripts": {
     "start": "electron ."
   },
-    "build": {
-    "appId": "com.example.myapp",
+
+  "build": {
+    "appId": "com.electron.myapp",
     "productName": "MyApp",
+    "directories": {
+      "output": "./dist"
+    },
     "files": [
-      "home/docker/app/*"
-    ]
+      "./*",
+      "./package.json",
+      "./package-lock.json"
+    ],
+    "win": {
+      "icon": "assets/win/icon_win.ico",
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
   },
+
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
@@ -25,6 +40,6 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^15.1.1",
-    "electron-builder": "22.13.1"
+    "electron-builder": "^22.13.1"
   }
 }
