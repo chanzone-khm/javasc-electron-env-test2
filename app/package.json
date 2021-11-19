@@ -6,7 +6,6 @@
   "scripts": {
     "start": "electron ."
   },
-
   "build": {
     "appId": "com.electron.myapp",
     "productName": "MyApp",
@@ -27,7 +26,6 @@
       "allowToChangeInstallationDirectory": true
     }
   },
-
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
@@ -41,5 +39,10 @@
   "devDependencies": {
     "electron": "^15.1.1",
     "electron-builder": "^22.13.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0",
+    "poppers.js": "^1.16.1"
   }
 }
