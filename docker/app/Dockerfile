@@ -52,6 +52,21 @@ RUN locale-gen ja_JP.UTF-8
 ENV LANG=ja_JP.UTF-8 \
     LC_ALL=ja_JP.UTF-8
 
+# yarnで色々インストール
+## bootstrap関連。 bootstrapを使うためにjqueryとpoppers.jsが必要
+RUN yarn add -y \
+jquery \
+poppers.js \
+bootstrap@5.1.3
+
+## 開発用のパッケージとかインストール
+RUN yarn add --dev -y \
+# コードフォーマット、構文エラーチェック
+prettier \
+eslint \
+eslint-config-prettier
+
+
 # add user
 ARG DOCKER_UID=1495070
 ARG DOCKER_USER=docker
