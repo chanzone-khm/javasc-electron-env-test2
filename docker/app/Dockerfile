@@ -52,6 +52,8 @@ RUN locale-gen ja_JP.UTF-8
 ENV LANG=ja_JP.UTF-8 \
     LC_ALL=ja_JP.UTF-8
 
+
+# ##################### 下記はpackage.jsonに記載してyarn add で追加するやつ?なので 削除か?? 確認中#######
 # yarnで色々インストール
 ## bootstrap関連。 bootstrapを使うためにjqueryとpoppers.jsが必要
 RUN yarn add -y \
