@@ -1,12 +1,14 @@
-{
+﻿{
   "name": "electron-quick-start",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "format": "prettier --write *.js",
+    "lint": "eslint --fix *.js",
+    "fix": "yarn run format && yarn run lint"
   },
-
   "build": {
     "appId": "com.electron.myapp",
     "productName": "MyApp",
@@ -27,7 +29,6 @@
       "allowToChangeInstallationDirectory": true
     }
   },
-
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
@@ -40,6 +41,9 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^15.1.1",
-    "electron-builder": "^22.13.1"
+    "electron-builder": "^22.13.1",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.4.1"
   }
 }
