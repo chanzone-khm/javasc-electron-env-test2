@@ -53,20 +53,7 @@ ENV LANG=ja_JP.UTF-8 \
     LC_ALL=ja_JP.UTF-8
 
 
-# ##################### 下記はpackage.jsonに記載してyarn add で追加するやつ?なので 削除か?? 確認中#######
-# yarnで色々インストール
-## bootstrap関連。 bootstrapを使うためにjqueryとpoppers.jsが必要
-RUN yarn add -y \
-jquery \
-poppers.js \
-bootstrap@5.1.3
 
-## 開発用のパッケージとかインストール
-RUN yarn add --dev -y \
-# コードフォーマット、構文エラーチェック
-prettier \
-eslint \
-eslint-config-prettier
 
 
 # add user
