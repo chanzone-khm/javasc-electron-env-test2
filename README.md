@@ -1,12 +1,13 @@
-# 自分の開発用メモ
+# GUI app development using docker × electron × nodejs
 
-GUI app development using docker × electron × nodejs
+自分の勉強用メモ
+※only windows
 
 ## Release note
 
-| date     | note                                                                                                                                |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| 21/12/05 | add <br> <p> <ul> <li>bootstrap5.1.3</li> <li>poppers.js</li> <li> jquery</li> </ul> bootstrap icons</p> <br> add devtools prettier/ eslint / eslint-config-prettier |
+| date     | note                                                                                                                                                                                                  |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 21/12/05 | add <br> <ul> <li>bootstrap5.1.3</li> <li>poppers.js</li> <li> jquery</li> <li>bootstrap icons</li></ul> <br> add devtools <ul><li>prettier</li> <li>eslint</li> <li>eslint-config-prettier</li></ul> |
 
 ## 21/12/05 how to setup
 
@@ -25,7 +26,3 @@ GUI app development using docker × electron × nodejs
 
 1. docker-compose up -d で起動
 2. visual studio code 等でコンテナにアクセスし開発
-
-### ライブラリを追加する場合
-
-1. yarn add / npm 等でパッケージを追加
